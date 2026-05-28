@@ -476,6 +476,7 @@ play_added_to_queue_single: |
   <b>𝗧ɪᴛʟᴇ: ➪ </b> <a href="{url}">{title}</a>
   <b>𝗧ɪᴍᴇ: ➪</b> {duration}
   <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {by}
+  <b>DEV ➪ <a href="https://t.me/HANTHAR999"> HAN THAR </a></b>
 
 channel_play_depreciated: "⚠️ This handler is deprecated. Use <code><a>/cplay --set channel_id </code></a> to set your channel for playback."
 play_multiple_tracks_too_long_header: "<b>⚠️ {count} tracks were skipped (max duration {limit_mins} mins):</b>"
@@ -512,6 +513,7 @@ ping_result: |
   <b>RAM Usage:</b> {ram_info}
   <b>CPU Usage:</b> {cpu_usage}
   <b>Disk Usage:</b> {disk_usage}
+  <b>DEV ➪ <a href="https://t.me/HANTHAR999"> HAN THAR </a></b>
 
 position_now: |
   🎵 <b>{title}</b>
@@ -889,7 +891,7 @@ spt_result: |
   Download: <code>{dl_mbps} Mbps</code>
   Upload: <code>{ul_mbps} Mbps</code>
 
-start_private: "Hello {user}, My name is {bot}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, JioSaavn, Soundcloud etc.\nFeel free to add me to your groups.\n\n🤍အရာအားလုံးအကောင်းလိုပဲ မြင်တယ်🤍"
+start_private: "Hello {user}, My name is {bot}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, JioSaavn, Soundcloud etc.\nFeel free to add me to your groups.\n\n🤍အရာအားလုံးအကောင်းလိုပဲ မြင်တယ်🤍\n <b>DEV ➪ <a href='https://t.me/HANTHAR999'> HAN THAR </a></b> "
 
 start_group: "<b>💫 I’m here!</b> Try a command… if you think you can handle me 😉"
 
