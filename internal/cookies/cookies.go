@@ -36,8 +36,9 @@ var embeddedCookies embed.FS
 func init() {
 	gologging.Debug("🔹 Initializing cookies...")
 
+	// Crash မဖြစ်အောင် Fatal ကို Error အဖြစ် ပြောင်းထားပါတယ်
 	if err := copyEmbeddedCookies(); err != nil {
-		gologging.Fatal("Failed to copy embedded cookies:", err)
+		gologging.Error("⚠️ Failed to copy embedded cookies, skipping: ", err)
 	}
 
 	urls := strings.Fields(config.CookiesLink)
@@ -53,13 +54,17 @@ func init() {
 }
 
 func copyEmbeddedCookies() error {
+	// ဖိုင်လမ်းကြောင်း မရှိရင် အရင်ဆောက်ပေးပါမယ်
+	if _, err := os.Stat(cookieDir); os.IsNotExist(err) {
+		os.MkdirAll(cookieDir, 0o755)
+	}
+
 	entries, err := embeddedCookies.ReadDir(".")
 	if err != nil {
 		return err
 	}
 
 	for _, e := range entries {
-
 		if e.IsDir() || e.Name() == "example.txt" {
 			continue
 		}
