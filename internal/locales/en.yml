@@ -15,10 +15,10 @@ SOURCE_BTN: "DEV"
 UPDATES_BTN: "Updates"
 SUPPORT_BTN: "Support"
 
-HELP_ADMINS_BTN: "🛠 Admins"
-HELP_PUBLIC_BTN: "🌍 Public"
-HELP_OWNER_BTN: "👑 Owner"
-HELP_SUDOERS_BTN: "⚡ Sudoers"
+HELP_ADMINS_BTN: " Admins"
+HELP_PUBLIC_BTN: " Public"
+HELP_OWNER_BTN: "Owner"
+HELP_SUDOERS_BTN: "Sudoers"
 
 BACK_BTN: "⬅️ Back"
 
@@ -128,7 +128,8 @@ cb_resume_message: |
   <b>𝗧ɪᴛʟᴇ: ➪</b> <a href="{url}">{title}</a>
   <b>𝗧ɪᴍᴇ: ➪</b> {duration}
   <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {user}
-  <b>DEV ➪ <a href="https://t.me/HANTHAR999"> HAN THAR </a></b>
+ 
+  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃:➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
 
 # Replay callback
 cb_replaying: "🔁 <b>Replaying current track...</b>"
@@ -476,7 +477,8 @@ play_added_to_queue_single: |
   <b>𝗧ɪᴛʟᴇ: ➪ </b> <a href="{url}">{title}</a>
   <b>𝗧ɪᴍᴇ: ➪</b> {duration}
   <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {by}
-  <b>DEV ➪ <a href="https://t.me/HANTHAR999"> HAN THAR </a></b>
+ 
+  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃 ➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
 
 channel_play_depreciated: "⚠️ This handler is deprecated. Use <code><a>/cplay --set channel_id </code></a> to set your channel for playback."
 play_multiple_tracks_too_long_header: "<b>⚠️ {count} tracks were skipped (max duration {limit_mins} mins):</b>"
@@ -513,7 +515,8 @@ ping_result: |
   <b>RAM Usage:</b> {ram_info}
   <b>CPU Usage:</b> {cpu_usage}
   <b>Disk Usage:</b> {disk_usage}
-  <b>DEV ➪ <a href="https://t.me/HANTHAR999"> HAN THAR </a></b>
+  
+  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
 
 position_now: |
   🎵 <b>{title}</b>
@@ -526,7 +529,7 @@ queue_header: "🎶 <b>Current Queue</b>"
 queue_now_playing: "▶️ <b>Now Playing:</b>"
 queue_up_next: "⏭️ <b>Up Next:</b>"
 queue_more_line: "\n… and {remaining} more"
-queue_empty_tail: "📭 No more songs in queue."
+queue_empty_tail: "📭 သီချင်းများ အားလုံးကုန်သွားပါပြီး"
 queue_empty: "⚠️ <b>The queue is already empty.</b>"
 queue_restored: "✅ Successfully restored <b>{count}</b> tracks to the queue."
 queue_restore_no_data: "❌ No cleared queue found to restore, or a new song has already been added."
@@ -683,7 +686,7 @@ rtmp_setup_usage: |
   • <code>full_rtmp_url</code> - Complete RTMP URL with stream key
   
   <b>📝 Example:</b>
-  <code>/setrtmp -1001234567890 rtmps://dc5-1.rtmp.t.me/s/123:key</code>
+  <code>/setrtmp -10098765432190 rtmps://dc5-1.rtmp.t.me/s/123:key</code>
   
   <b>🔍 How to get chat ID:</b>
   • Forward any message from chat to @userinfobot
@@ -700,7 +703,7 @@ rtmp_invalid_chat_id: |
   Please provide a valid numeric chat ID.
   
   <b>💡 Example:</b>
-  <code>/setrtmp -1001234567890 rtmps://...</code>
+  <code>/setrtmp -1009876543214 rtmps://...</code>
 
 rtmp_check_admin_failed: |
   ❌ <b>Failed to verify admin status:</b>
@@ -757,7 +760,7 @@ stats_go_mem_header: "📦 <b>Internal Memory (Go):</b>"
 stats_server_header: "💻 <b>Server Stats:</b>"
 stats_served_header: "📊 <b>Served:</b>"
 
-stats_system_os_arch: "• OS: <code>{os}</code>, Arch: <code>{arch}</code>"
+stats_system_os_arch: "• OS: <code>{os}</code>, HanThar Site: <code>{arch}</code>"
 stats_system_cpu_goroutines: "• CPUs: <code>{cpus}</code>, Goroutines: <code>{goroutines}</code>"
 
 stats_go_alloc: "• Alloc: <code>{alloc} MB</code>"
@@ -891,9 +894,9 @@ spt_result: |
   Download: <code>{dl_mbps} Mbps</code>
   Upload: <code>{ul_mbps} Mbps</code>
 
-start_private: "Hello {user}, My name is {bot}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, JioSaavn, Soundcloud etc.\nFeel free to add me to your groups.\n\n🤍အရာအားလုံးအကောင်းလိုပဲ မြင်တယ်🤍\n <b>DEV ➪ <a href='https://t.me/HANTHAR999'> HAN THAR </a></b> "
+start_private: "Hey💞 {user}, I am {bot}.\n\nI💘'm a telegram streaming bot with some useful features.💓 Supporting platforms like Youtube, Spotify, Soundcloud etc.💓\n💞 Add Me To Your Groups.💞\n\n🤍အရာအားလုံးအကောင်းလိုပဲ မြင်တယ်🤍\n <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃➪ <a href='https://t.me/HANTHAR999'>🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b> "
 
-start_group: "<b>💫 I’m here!</b> Try a command… if you think you can handle me 😉"
+start_group: "<b>💫 I’m here!</b> Try a command… Now Play Music 😉"
 
 stream_channelid_fail: "⚠️ Failed to get your connected channel’s ID."
 stream_queue_finished: "No more songs in the queue."
@@ -906,6 +909,8 @@ stream_now_playing: |
   <b>𝗧ɪᴛʟᴇ: ➪ </b> <a href="{url}">{title}</a>
   <b>𝗧ɪᴍᴇ: ➪</b> {duration}
   <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {by}
+  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃 ➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
+
 
 
 sudo_join_owner: "👑 {user} — owner of {bot} — just entered the chat."
