@@ -123,13 +123,13 @@ cb_already_playing: "ℹ️ Track is already playing."
 cb_resume_failed: "❌ Failed to resume playback."
 cb_resume_success: "▶️ Resumed at {position}."
 cb_resume_message: |
-  <b>🎵 Now Playing</b>
+  <blockquote><b>🎵 Now Playing</b></blockquote>
 
-  <b>𝗧ɪᴛʟᴇ: ➪</b> <a href="{url}">{title}</a>
+  <blockquote><b>𝗧ɪᴛʟᴇ: ➪</b> <a href="{url}">{title}</a>
   <b>𝗧ɪᴍᴇ: ➪</b> {duration}
-  <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {user}
+  <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {user}</blockquote>
  
-  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃:➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
+  <blockquote><b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃:➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b></blockquote>
 
 # Replay callback
 cb_replaying: "🔁 <b>Replaying current track...</b>"
@@ -472,13 +472,13 @@ play_download_failed: |
   Error: <code>{error}</code>
 
 play_added_to_queue_single: |
-  <b>Added to Queue:</b> #{index}
+  <blockquote><b>Added to Queue:</b> #{index}</blockquote>
 
-  <b>𝗧ɪᴛʟᴇ: ➪ </b> <a href="{url}">{title}</a>
+  <blockquote><b>𝗧ɪᴛʟᴇ: ➪ </b> <a href="{url}">{title}</a>
   <b>𝗧ɪᴍᴇ: ➪</b> {duration}
-  <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {by}
+  <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {by}</blockquote>
  
-  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃 ➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
+  <blockquote><b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃 ➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b></blockquote>
 
 channel_play_depreciated: "⚠️ This handler is deprecated. Use <code><a>/cplay --set channel_id </code></a> to set your channel for playback."
 play_multiple_tracks_too_long_header: "<b>⚠️ {count} tracks were skipped (max duration {limit_mins} mins):</b>"
@@ -516,7 +516,7 @@ ping_result: |
   <b>CPU Usage:</b> {cpu_usage}
   <b>Disk Usage:</b> {disk_usage}
   
-  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
+  <blockquote><b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b></blockquote>
 
 position_now: |
   🎵 <b>{title}</b>
@@ -894,7 +894,7 @@ spt_result: |
   Download: <code>{dl_mbps} Mbps</code>
   Upload: <code>{ul_mbps} Mbps</code>
 
-start_private: "Hey💞 {user}, I am {bot}.\n\nI💘'm a telegram streaming bot with some useful features.💓 Supporting platforms like Youtube, Spotify, Soundcloud etc.💓\n💞 Add Me To Your Groups.💞\n\n🤍အရာအားလုံးအကောင်းလိုပဲ မြင်တယ်🤍\n <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃➪ <a href='https://t.me/HANTHAR999'>🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b> "
+start_private: "<blockquote> Hey💞 {user} </blockquote>\n<blockquote>I am {bot}.</blockquote>\n<blockquote>I💘'm a telegram streaming bot with some useful features.💓 Supporting platforms like Youtube, Spotify, Soundcloud etc.💓</blockquote>\n\n<blockquote>🤍အရာအားလုံးအကောင်းလိုပဲ မြင်တယ်🤍\n <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃➪ <a href='https://t.me/HANTHAR999'>🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b></blockquote>"
 
 start_group: "<b>💫 I’m here!</b> Try a command… Now Play Music 😉"
 
@@ -904,12 +904,13 @@ stream_downloading_next: "Hold On !!\n\n📥 Downloading your next track..."
 stream_download_fail: "❌ Failed to download.\nError: <code>{error}</code>"
 stream_play_fail: "❌ Failed to play the song."
 stream_now_playing: |
-  <b>🎵 Now Playing 🎵</b>
+  <blockquote><b>🎵 Now Playing 🎵</b></blockquote>
 
-  <b>𝗧ɪᴛʟᴇ: ➪ </b> <a href="{url}">{title}</a>
+  <blockquote><b>𝗧ɪᴛʟᴇ: ➪ </b> <a href="{url}">{title}</a>
   <b>𝗧ɪᴍᴇ: ➪</b> {duration}
-  <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {by}
-  <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃 ➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b>
+  <b>𝗥ᴇǫᴜᴇsᴛᴇʀ: ➪</b> {by}</blockquote>
+  
+  <blockquote><b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃 ➪ <a href="https://t.me/HANTHAR999">🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b></blockquote>
 
 
 
