@@ -61,7 +61,7 @@ func getSystemStats(chatID int64) string {
 	sb.WriteString(F(chatID, "stats_system_header") + "\n")
 	sb.WriteString(F(chatID, "stats_system_os_arch", locales.Arg{
 		"os":   runtime.GOOS,
-		"arch": runtime.GOARCH,
+		"hanthar": runtime.GOARCH,
 	}) + "\n")
 	sb.WriteString(F(chatID, "stats_system_cpu_goroutines", locales.Arg{
 		"cpus":       runtime.NumCPU(),
