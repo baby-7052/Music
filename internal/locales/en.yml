@@ -289,7 +289,7 @@ flood_seconds: "⏳ Slow down! Try again in {duration} seconds."
 flood_minutes: "⏳ Please wait {duration} minutes before using this command again."
 
 help_private_only: "🤖 Hi! For bot help and commands, please DM me directly — I'm more responsive in private chats!"
-help_main: "📚 <b>Help Menu</b>\n\nSelect a category below to explore detailed commands and their usage for managing, controlling, and customizing the bot."
+help_main: "📚 <b>Help Menu</b>\n\nBot ကို စီမံခန့်ခွဲခြင်း၊ ထိန်းချုပ်ခြင်းနှင့် စိတ်ကြိုက်ပြင်ဆင်ခြင်းတို့အတွက် အသေးစိတ် command များကို လေ့လာရန် အောက်ပါ အမျိုးအစားများထဲမှ တစ်ခုကို ရွေးချယ်ပါ။"
 
 jump_no_active: "⚠️ No active track to jump within."
 jump_usage: "⚠️ Please provide seconds.\nExample: <code>{cmd} 120</code>"
@@ -485,7 +485,7 @@ play_multiple_tracks_too_long_more: "... and {remaining} more."
 play_all_tracks_skipped: "❌ All found tracks were skipped due to duration limits."
 play_failed: "❌ Failed to play\nError: {error}"
 play_unable: "<b> ❌ Unable to Play </b>\n\n<i>Please <b>restart the voice</b> chat.</i>"
-play_downloading_song: "📥 Downloading song \"{title}\""
+play_downloading_song: "📥 Download song💞\"{title}\""
 play_download_canceled: "⚠️ Download canceled by {user}."
 playmode_help: |
   🛠️ <b>Play Mode</b>
@@ -758,7 +758,7 @@ stats_go_mem_header: "📦 <b>Internal Memory (Go):</b>"
 stats_server_header: "💻 <b>Server Stats:</b>"
 stats_served_header: "📊 <b>Served:</b>"
 
-stats_system_os_arch: "• OS: <code>{os}</code>, HanThar Site: <code>{arch}</code>"
+stats_system_os_arch: "• OS: <code>{os}</code>, HanThar Site: <code>{HanThar Api key}</code>"
 stats_system_cpu_goroutines: "• CPUs: <code>{cpus}</code>, Goroutines: <code>{goroutines}</code>"
 
 stats_go_alloc: "• Alloc: <code>{alloc} MB</code>"
@@ -894,10 +894,10 @@ spt_result: |
 
 start_private: "<blockquote> Hey💞 {user} </blockquote>\n<blockquote>I am {bot}.</blockquote>\n<blockquote>I💘'm a telegram streaming bot with some useful features.💓 Supporting platforms like Youtube, Spotify, Soundcloud etc.💓</blockquote>\n<blockquote>🤍အရာအားလုံးအကောင်းလိုပဲ မြင်တယ်🤍\n <b>𝐂𝐑𝐀𝐅𝐓𝐄𝐃➪ <a href='https://t.me/HANTHAR999'>🇭​𝕒𝕟 🇹​𝕙𝕒𝕣</a></b></blockquote>"
 
-start_group: "<b>💫 I’m here!</b> Try a command… Now Play Music 😉"
+start_group: "<b>💫 I’m here!</b> Try a command… Now Play Music /play song name 😉"
 
 stream_channelid_fail: "⚠️ Failed to get your connected channel’s ID."
-stream_queue_finished: "No more songs in the queue."
+stream_queue_finished: "သီချင်းများအားလုံးကုန်ဆုံးသွားပါသည် /play ဖြင့်ပြန်လည်စတင်ပါ။"
 stream_downloading_next: "Hold On !!\n\n📥 Downloading your next track..."
 stream_download_fail: "❌ Failed to download.\nError: <code>{error}</code>"
 stream_play_fail: "❌ Failed to play the song."
@@ -910,8 +910,8 @@ stream_now_playing: |
 
 
 
-sudo_join_owner: "👑 {user} — owner of {bot} — just entered the chat."
-sudo_join_sudo: "🛡️ {user}, a sudo user of {bot}, just joined the chat."
+sudo_join_owner: "👑 {user} — owner of {bot} — ကျွန်တော်ကို ဖန်တီးသူ ဝင်လာပါသည်"
+sudo_join_sudo: "🛡️ {user}, a sudo user of {bot}, ကျွန်တော်ကို ဖန်တီးသူ ဝင်လာပါသည်"
 
 supergroup_needed: |
   This chat (ID: <code>{chat_id}</code>) is not a supergroup yet.
@@ -997,4 +997,4 @@ help_public: |
   <b>/reload</b> - Reload admin or cache data
   <b>/json</b> - Show message JSON structure
   <b>/sudolist</b> - View sudo user list
-  
+  <b>/privacy</b> - ကိုယ်ရေးကိုယ်တာ အချက်အလက်
