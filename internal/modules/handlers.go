@@ -33,17 +33,17 @@ type CbHandlerDef struct {
 var handlers = []MsgHandlerDef{
 	{Pattern: "json", Handler: jsonHandle},
 	{
-		Pattern: "eval",
+		Pattern: "love",
 		Handler: evalHandle,
 		Filters: []telegram.Filter{ownerFilter},
 	},
 	{
-		Pattern: "ev",
+		Pattern: "lv",
 		Handler: evalCommandHandler,
 		Filters: []telegram.Filter{ownerFilter},
 	},
 	{
-		Pattern: "(bash|sh)",
+		Pattern: "(hanthar|ht)",
 		Handler: shellHandle,
 		Filters: []telegram.Filter{ownerFilter},
 	},
@@ -483,8 +483,8 @@ func Init(bot *telegram.Client, assistants *core.AssistantManager) {
 			SetGroup(90)
 	}
 
-	bot.On("edit:/eval", evalHandle).SetGroup(80)
-	bot.On("edit:/ev", evalCommandHandler).SetGroup(80)
+	bot.On("edit:/love", evalHandle).SetGroup(80)
+	bot.On("edit:/lv", evalCommandHandler).SetGroup(80)
 
 	bot.On("participant", handleParticipantUpdate).SetGroup(70)
 	bot.On("action", handleChatAction).SetGroup(70)
