@@ -96,7 +96,7 @@ Examples:
 	if !strings.Contains(code, "package ") && !strings.Contains(code, "func ") {
 		code = fmt.Sprintf(`package main
 import (
-	e "eval/eval"
+	e "love/love"
 	"fmt"
 )
 
