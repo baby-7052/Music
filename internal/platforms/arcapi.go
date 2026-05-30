@@ -22,7 +22,7 @@ import (
 	state "main/internal/core/models"
 )
 
-const PlatformArcApi state.PlatformName = "ArcApi"
+const PlatformArcApi state.PlatformName = "HanTharApi"
 
 type ArcApiPlatform struct {
 	name state.PlatformName
@@ -43,7 +43,7 @@ func (f *ArcApiPlatform) CanGetTracks(query string) bool {
 }
 
 func (f *ArcApiPlatform) GetTracks(_ string, _ bool) ([]*state.Track, error) {
-	return nil, errors.New("arcapi is a download-only platform")
+	return nil, errors.New("Hantharapi is a download-only platform")
 }
 
 func (f *ArcApiPlatform) CanDownload(source state.PlatformName) bool {
@@ -61,15 +61,15 @@ func (f *ArcApiPlatform) Download(
 
 	// Check local cache just in case the file was historically downloaded
 	if f := findFile(track); f != "" {
-		gologging.Debug("ArcApi: Download -> Local Cached File -> " + f)
+		gologging.Debug("HanTharApi: Download -> Local Cached File -> " + f)
 		return f, nil
 	}
 
-	gologging.Debug("ArcApi: Fetching direct streaming URL from API V2")
+	gologging.Debug("HanTharApi: Fetching direct streaming URL from API V2")
 
 	dlURL, err := f.v2Download(ctx, track)
 	if err != nil {
-		gologging.ErrorF("ArcApi: V2 URL fetch failed: %v", err)
+		gologging.ErrorF("HanTharApi: V2 URL fetch failed: %v", err)
 		return "", err
 	}
 
@@ -121,7 +121,7 @@ func (f *ArcApiPlatform) v2Download(ctx context.Context, track *state.Track) (st
 	if status == "queued" || status == "processing" {
 		jobID := f.extractJobID(respData)
 		if jobID != "" {
-			gologging.DebugF("ArcApi: Polling Job ID: %s", jobID)
+			gologging.DebugF("HanTharApi: Polling Job ID: %s", jobID)
 
 			dlURL := f.pollJobStatus(ctx, jobID)
 			if dlURL != "" {
