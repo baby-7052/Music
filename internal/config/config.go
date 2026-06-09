@@ -105,7 +105,7 @@ func loadConfig() {
 	ArcAPIKey = getString("ARC_API_KEY", "")
 
 	DefaultLang = getString("DEFAULT_LANG", "en")
-	DurationLimit = int(getInt64("DURATION_LIMIT", 3600)) // In seconds
+	DurationLimit = int(getInt64("DURATION_LIMIT", 36000)) // In seconds
 	LeaveOnDemoted = getBool("LEAVE_ON_DEMOTED", false)
 	QueueLimit = int(getInt64("QUEUE_LIMIT", 10))
 	SupportChat = getString("SUPPORT_CHAT", "https://t.me/myanmar_music_Bot2027")
